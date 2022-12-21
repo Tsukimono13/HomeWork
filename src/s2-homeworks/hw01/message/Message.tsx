@@ -1,5 +1,6 @@
 import React from 'react'
 import s from './Message.module.css'
+import {avatarClasses} from "@mui/material";
 
 // нужно создать правильный тип вместо any
 export type MessagePropsType = {
