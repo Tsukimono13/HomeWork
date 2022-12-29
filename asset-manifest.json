@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tsukimono13/HomeWork/static/css/main.7710a76d.css",
+    "main.js": "/Tsukimono13/HomeWork/static/js/main.eb565e8a.js",
+    "static/js/787.66cb4309.chunk.js": "/Tsukimono13/HomeWork/static/js/787.66cb4309.chunk.js",
+    "index.html": "/Tsukimono13/HomeWork/index.html",
+    "main.7710a76d.css.map": "/Tsukimono13/HomeWork/static/css/main.7710a76d.css.map",
+    "main.eb565e8a.js.map": "/Tsukimono13/HomeWork/static/js/main.eb565e8a.js.map",
+    "787.66cb4309.chunk.js.map": "/Tsukimono13/HomeWork/static/js/787.66cb4309.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7710a76d.css",
+    "static/js/main.eb565e8a.js"
+  ]
+}
