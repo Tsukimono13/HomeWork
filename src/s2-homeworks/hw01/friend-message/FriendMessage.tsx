@@ -1,7 +1,8 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
+import avatar from "../avatar.png";
 
-type FreindsMessageType = {
+type FriendsMessageType = {
     message: {
         id: number,
         user:{
@@ -15,14 +16,14 @@ type FreindsMessageType = {
     }
 }
 
-const FriendMessage = (props: FreindsMessageType) => {
+const FriendMessage = (props: FriendsMessageType) => {
     return (
         <div
             id={'hw1-friend-message-' + props.message.id}
             className={s.friendMessage}
         >
             <div className={s.friendImageAndText}>
-                <img src={"avatar.png"}
+                <img className={s.friendImageAndTex} src={avatar} alt={""}
                     id={'hw1-friend-avatar-' + props.message.id}
 
                 />
@@ -33,7 +34,6 @@ const FriendMessage = (props: FreindsMessageType) => {
                     >
                         {props.message.user.name}
 
-                        {/**/}
                     </div>
                     <pre
                         id={'hw1-friend-text-' + props.message.id}
@@ -41,7 +41,6 @@ const FriendMessage = (props: FreindsMessageType) => {
                     >
                         {props.message.message.text}
 
-                        {/**/}
                     </pre>
                 </div>
             </div>
@@ -51,7 +50,6 @@ const FriendMessage = (props: FreindsMessageType) => {
             >
                 {props.message.message.time}
 
-                {/**/}
             </div>
         </div>
     )

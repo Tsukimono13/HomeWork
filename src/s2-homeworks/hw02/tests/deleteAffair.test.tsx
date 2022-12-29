@@ -1,5 +1,5 @@
 import React from 'react'
-import { AffairType, deleteAffair } from '../HW2'
+import { AffairType } from '../HW2'
 
 let initialState: AffairType[]
 
@@ -12,6 +12,11 @@ beforeEach(() => {
         { _id: 5, name: 'html & css', priority: 'middle' },
     ]
 })
+
+const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
+     return affairs.filter(a => a._id !== _id)
+     // need to fix
+}
 
 test('delete 0', () => {
     const newState = deleteAffair(initialState, 0)

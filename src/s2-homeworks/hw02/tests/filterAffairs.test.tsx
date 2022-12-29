@@ -1,5 +1,5 @@
 import React from 'react'
-import { AffairType, filterAffairs } from '../HW2'
+import {AffairType, FilterType} from '../HW2'
 
 let initialState: AffairType[]
 
@@ -12,6 +12,19 @@ beforeEach(() => {
         { _id: 5, name: 'html & css', priority: 'middle' },
     ]
 })
+
+const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): Array<AffairType> => { // need to fix any
+    switch (filter) {
+        case "high":
+            return affairs.filter(a => a.priority === 'high')
+        case "middle":
+            return affairs.filter(a => a.priority === 'middle')
+        case "low":
+            return affairs.filter(a => a.priority === 'low')
+        default:
+            return affairs
+    }
+}
 
 test('filter by all', () => {
     const newState = filterAffairs(initialState, 'all')

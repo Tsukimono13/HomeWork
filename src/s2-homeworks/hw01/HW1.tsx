@@ -5,6 +5,8 @@ import s2 from '../../s1-main/App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
+
+
 /*
 * 1 - описать тип MessageType
 * 2 - описать тип MessagePropsType в файле Message.tsx
@@ -14,6 +16,8 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
+
+
 export type MessageType = {
         id: number,
         user: {
@@ -24,7 +28,6 @@ export type MessageType = {
             text: string,
             time: string
         }
-
 }
 
 // структуру объекта не менять
@@ -43,10 +46,10 @@ export const friendMessage0: MessageType = {
     id: 100,
     user: {
         avatar: avatar, // можно менять
-        name: 'Friend Name', // можно менять
+        name: 'Ivan', // можно менять
     },
     message: {
-        text: 'зеркальное сообщение для тренировки css', // можно менять
+        text: 'Hello, how are you, what did you do yesterday?', // можно менять
         time: '22:00', // можно менять
     },
 }
@@ -55,6 +58,7 @@ const HW1 = () => {
     let sizing;
     return (
         <div id={'hw1'}>
+
             <div className={s2.hwTitle}>Homework #1</div>
             <div className={s2.hw}>
 
@@ -62,6 +66,9 @@ const HW1 = () => {
                 <div>
                     <Message message={message0}/>
                     <FriendMessage message={friendMessage0}/>
+                    <Message message={message0}/>
+                    <Message message={message0}/>
+
                 </div>
 
                 {/*для автоматической проверки дз (не менять)*/}
