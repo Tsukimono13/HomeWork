@@ -5,7 +5,7 @@ import avatar from "../avatar.png";
 type FriendsMessageType = {
     message: {
         id: number,
-        user:{
+        user: {
             avatar: any,
             name: string
         },
@@ -24,7 +24,7 @@ const FriendMessage = (props: FriendsMessageType) => {
         >
             <div className={s.friendImageAndText}>
                 <img className={s.friendImageAndTex} src={avatar} alt={""}
-                    id={'hw1-friend-avatar-' + props.message.id}
+                     id={'hw1-friend-avatar-' + props.message.id}
 
                 />
                 <div className={s.friendText}>

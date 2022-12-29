@@ -7,7 +7,7 @@ import avatar from '../avatar.png'
 export type MessagePropsType = {
     message: {
         id: number,
-        user:{
+        user: {
             avatar: string,
             name: string
         },
@@ -22,25 +22,25 @@ export type MessagePropsType = {
 const Message = (props: MessagePropsType) => {
     return (
         <div className={s.container}>
-        <div id={'hw1-message-' + props.message.id} className={s.message}>
-            <div className={s.imageAndText}>
-                <img className={s.imageAndText} src={avatar} alt={""}
-                    id={'hw1-avatar-' + props.message.id}
-                />
-                <div className={s.text}>
-                    <div id={'hw1-name' + props.message.id} className={s.name}>
-                        {props.message.user.name}
+            <div id={'hw1-message-' + props.message.id} className={s.message}>
+                <div className={s.imageAndText}>
+                    <img className={s.imageAndText} src={avatar} alt={""}
+                         id={'hw1-avatar-' + props.message.id}
+                    />
+                    <div className={s.text}>
+                        <div id={'hw1-name' + props.message.id} className={s.name}>
+                            {props.message.user.name}
 
-                    </div>
-                    <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
+                        </div>
+                        <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
                         {props.message.message.text}
                     </pre>
+                    </div>
+                </div>
+                <div id={'hw1-time-' + props.message.id} className={s.time}>
+                    {props.message.message.time}
                 </div>
             </div>
-            <div id={'hw1-time-' + props.message.id} className={s.time}>
-                {props.message.message.time}
-            </div>
-        </div>
         </div>
     )
 }

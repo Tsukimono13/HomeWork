@@ -39,11 +39,8 @@ function Affair(props: AffairPropsType) {
                 className={buttonClass}
                 onClick={deleteCallback}
                 // need to fix
-
             >
-
                 X
-
             </button>
         </div>
     )

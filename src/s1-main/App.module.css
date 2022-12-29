@@ -20,7 +20,9 @@ display: flex;
 
 
     border: 1px solid #D9D9D9;
+    padding-bottom: 420px;
 }
+
 
 .hwTitle {
     font-family: 'Montserrat';

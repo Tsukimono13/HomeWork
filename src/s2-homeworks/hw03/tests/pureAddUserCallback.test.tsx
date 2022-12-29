@@ -10,6 +10,7 @@ beforeEach(() => {
     initialState = []
 })
 
+
 test('name 1', () => {
     pureAddUserCallback('name', setName, initialState)
     expect(initialState.length).toBe(1)
