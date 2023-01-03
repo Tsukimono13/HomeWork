@@ -1,19 +1,10 @@
 import React from 'react'
 import s from './FriendMessage.module.css'
 import avatar from "../avatar.png";
+import {MessageType} from "../HW1";
 
 type FriendsMessageType = {
-    message: {
-        id: number,
-        user: {
-            avatar: any,
-            name: string
-        },
-        message: {
-            text: string,
-            time: string
-        }
-    }
+    message: MessageType
 }
 
 const FriendMessage = (props: FriendsMessageType) => {
@@ -27,7 +18,7 @@ const FriendMessage = (props: FriendsMessageType) => {
                      id={'hw1-friend-avatar-' + props.message.id}
                 />
                 <div className={s.friendText}>
-                    <div id={'hw1-friend-name-1' + props.message.id}
+                    <div id={'hw1-friend-name-' + props.message.id}
                          className={s.friendName}>
                         {props.message.user.name}
                     </div>
