@@ -1,8 +1,8 @@
-import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
+import React, {KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
-import { UserType } from './HW3'
+import {UserType} from './HW3'
 
-const pureAddUser = (name: string, setError: any, setName: any, addUserCallback: any) => {
+export const pureAddUser = (name: string, setError: any, setName: any, addUserCallback: any) => {
     if (name.trim() !== "") {
         addUserCallback(name)
         setName("")
@@ -11,13 +11,13 @@ const pureAddUser = (name: string, setError: any, setName: any, addUserCallback:
     }
 }
 
-const pureOnBlur = (name: string, setError: any) => {
+export const pureOnBlur = (name: string, setError: any) => {
     if (name === "") {
         setError ("Ошибка! Введите имя!")}
 }// если имя пустое - показать ошибку
 
 
-const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: any) => {
+export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: any) => {
     if (e.key === 'Enter' ) {
         addUser()
     }// если нажата кнопка Enter - добавить
