@@ -25,7 +25,7 @@ export type UserType = {
 
 
 export const pureAddUserCallback = (name: string, setUsers: any, users: Array<UserType>) => { // need to fix any
-    const user = { id: v1(), name}
+    const user = { _id: v1(), name}
     setUsers([...users, user]) }
 
 const HW3 = () => {

@@ -1,4 +1,4 @@
-import React, {KeyboardEvent} from 'react'
+import React, {FocusEventHandler, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
@@ -25,9 +25,9 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = s.errorInput // need to fix with (?:)
+    const inputClass = error ? s.errorInput : s.input// need to fix with (?:)
 
-    const keyDown = (e: any) => {
+    const keyDown = (e: KeyboardEvent<HTMLInputElement>) => {
 
     }
 
