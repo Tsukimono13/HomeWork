@@ -44,31 +44,33 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
     const [error, setError] = useState<string>('') // need to fix any
-    console.log(name)
+
     const setNameCallback = (e: any) => { // need to fix any
-        const trimmedName = e.currentTarget.value.trim()
-        if (trimmedName) {
+        const trimmedName = e.currentTarget.value
+
+        if (trimmedName.trim() !== '') {
             setName(trimmedName)
-        setError('')
+            setError('')
         } else {
-            setName('')
+            /*setName('')*/
             setError("Ошибка! Введите имя!")
         }
     }
     const addUser = () => {
         pureAddUser(name, setError, setName, addUserCallback)
+        setName('')
     }
 
     const onBlur = () => {
         pureOnBlur(name, setError)
     }
 
-    const onEnter = (e: any) => {
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         pureOnEnter(e, addUser)
     }
 
     const totalUsers = users.length // need to fix
-    const lastUserName = name // need to fix
+    const lastUserName = users[0]?.name // need to fix
 
     return (
         <Greeting
