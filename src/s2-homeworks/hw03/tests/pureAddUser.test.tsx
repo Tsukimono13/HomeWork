@@ -20,7 +20,6 @@ beforeEach(() => {
     added = false
 })
 
-
 test('name 1', () => {
     name = '1'
     pureAddUser(name, setError, setName, addUserCallback)

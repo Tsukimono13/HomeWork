@@ -12,7 +12,6 @@ beforeEach(() => {
     error = ''
 })
 
-
 test('name 1', () => {
     name = '1'
     pureOnBlur(name, setError)

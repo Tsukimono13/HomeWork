@@ -37,7 +37,6 @@
 }
 
 .errorInput {
-    box-sizing: border-box;
     border: 1px solid #CC0000;
     border-radius: 5px;
 }
@@ -59,12 +58,15 @@
 
 
     background: #0066CC;
-    opacity: 0.5;
+
     border-radius: 3px;
     margin-left: 10px;
 }
 
 .button:focus {
+    background: #0066CC;
+    border-radius: 3px;
+    opacity: 0.5;
 }
 
 .button:active {
