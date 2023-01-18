@@ -1,12 +1,12 @@
-import React, {FocusEventHandler, KeyboardEvent} from 'react'
+import React, {ChangeEvent, KeyboardEvent} from 'react'
 import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: string // need to fix any
-    setNameCallback: (e: any)=> void // need to fix any
-    addUser: any // need to fix any
-    onBlur: (name: string, setError: any)=> void// need to fix any
-    onEnter: (e: KeyboardEvent<HTMLInputElement>, addUser: any)=> void // need to fix any
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>)=> void // need to fix any
+    addUser: ()=>void // need to fix any
+    onBlur: (name: string, setError: string)=> void// need to fix any
+    onEnter: (e: KeyboardEvent<HTMLInputElement>, addUser: string)=> void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: string // need to fix any
@@ -28,11 +28,9 @@ const Greeting: React.FC<GreetingPropsType> = (
     const inputClass = error ? s.errorInput : s.input// need to fix with (?:)
 
     const keyDown = (e: KeyboardEvent<HTMLInputElement>) => {
-
     }
 
     const blur = (e: any) => {
-
     }
 
     return (
@@ -48,7 +46,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                 <div>
                     <input
                         id={'hw3-input'}
-                        value={addUser}
+                        value={name}
                         onChange={setNameCallback}
                         className={inputClass}
                         onKeyDown={keyDown}
@@ -64,6 +62,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     onClick={addUser}
                     className={s.button}
                     disabled={!name.trim()}
+
                 >
                     add
                 </button>

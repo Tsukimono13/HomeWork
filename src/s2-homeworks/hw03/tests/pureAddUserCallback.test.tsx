@@ -1,10 +1,15 @@
 import React from 'react'
-import {pureAddUserCallback} from '../HW3'
+
+import {v1} from "uuid";
+import {UserType} from "../HW3";
 
 let initialState: any[]
 const setName = (a: any[]) => {
     initialState = a
 }
+const pureAddUserCallback = (name: string, setUsers: any, users: Array<UserType>) => { // need to fix any
+    const user = { _id: v1(), name}
+    setUsers([...users, user]) }
 
 beforeEach(() => {
     initialState = []
