@@ -7,6 +7,7 @@
     font-size: 14px;
 
     color: #000000;
+    margin-left: 10px;
 
 }
 
@@ -29,6 +30,8 @@
 .input {
     border: 1px solid #D1D1D1;
     border-radius: 5px;
+    height: 23px;
+    width: 200px;
 
 }
 
@@ -62,8 +65,8 @@
 
     border-radius: 3px;
     margin-left: 10px;
-    width: 78px;
-    height: 36px;
+    width: 60px;
+    height: 30px;
 }
 
 .button:focus {
