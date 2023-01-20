@@ -2,7 +2,7 @@
 
 .sidebar {
     z-index: 20;
-    position: fixed;
+    /*position: fixed;*/
     transition: 0.2s ease-in;
 
     height: 100vh;
@@ -14,7 +14,7 @@
 }
 
 .sidebar.open {
-    position: fixed;
+   /* position: fixed;*/
     transition: 0.2s ease-out;
 
     left: 0;
@@ -24,7 +24,7 @@
 
 .background {
     z-index: 10;
-    position: fixed;
+    /*position: fixed;*/
 
     bottom: 0;
     left: 0;
@@ -36,7 +36,7 @@
 }
 
 .nav {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     gap: 45px;
     margin-top: 63px;
@@ -46,7 +46,7 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 27px;*/
 
 }
 
