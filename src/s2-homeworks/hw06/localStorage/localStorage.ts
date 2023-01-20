@@ -21,6 +21,7 @@ type StateType = {
     y: number
 }
 
+
 // сохраняем объект типа StateType в ячейке 'test'
 saveState<StateType>('test', { x: 'A', y: 1 })
 

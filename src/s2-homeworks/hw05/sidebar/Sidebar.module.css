@@ -2,7 +2,7 @@
 
 .sidebar {
     z-index: 20;
-    /*position: fixed;*/
+    position: fixed;
     transition: 0.2s ease-in;
 
     height: 100vh;
@@ -14,7 +14,7 @@
 }
 
 .sidebar.open {
-   /* position: fixed;*/
+    position: fixed;
     transition: 0.2s ease-out;
 
     left: 0;
@@ -24,7 +24,7 @@
 
 .background {
     z-index: 10;
-    /*position: fixed;*/
+    position: fixed;
 
     bottom: 0;
     left: 0;
