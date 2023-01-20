@@ -36,7 +36,7 @@
 }
 
 .nav {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
     gap: 45px;
     margin-top: 63px;
@@ -46,7 +46,7 @@
     font-size: 22px;
     font-style: normal;
     font-weight: 600;
-    line-height: 27px;*/
+    line-height: 27px;
 
 }
 
