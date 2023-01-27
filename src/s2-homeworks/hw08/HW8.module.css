@@ -1,23 +1,44 @@
 .item {
+
 }
 
 .item:last-of-type {
+
 }
 
 .users {
+    width: 606px;
 }
 
 .buttonsContainer {
+    margin-left: 256px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+
 }
 
 .container {
+margin-left: 50px;
 }
 
 .thead {
+    width: 606px;
+    height: 36px;
+    top: 1044px;
+
+    background: #E5E5E5;
 }
 
 .nameCol {
+    padding-left: 17px;
 }
 
 .ageCol {
+    padding-right: 35px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
 }
