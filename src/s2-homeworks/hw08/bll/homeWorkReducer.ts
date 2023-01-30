@@ -7,9 +7,12 @@ type ActionType =
 export const homeWorkReducer = (state: UserType[], action: ActionType): any => { // need to fix any
     switch (action.type) {
         case 'sort': {
-            return action.payload === "up" ? state.sort(function (a, b) {
+            let deepCope = state.map(el => {
+                return {...el}
+                })
+            return action.payload === "up" ? deepCope.sort(function (a, b) {
                 return a.name.localeCompare(b.name)
-            }) : state.sort(function (a, b) {
+            }) : deepCope.sort(function (a, b) {
                 return b.name.localeCompare(a.name) // need to fix
         })}
         case 'check': {
