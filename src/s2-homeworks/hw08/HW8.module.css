@@ -11,26 +11,31 @@
 }
 
 .buttonsContainer {
-    margin-left: 256px;
+    margin-left: 236px;
     margin-top: 25px;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 
 }
 
 .container {
 margin-left: 50px;
+
 }
 
 .thead {
     width: 606px;
     height: 36px;
     top: 1044px;
-
     background: #E5E5E5;
+
 }
 
 .nameCol {
     padding-left: 17px;
+
 }
 
 .ageCol {
