@@ -1,8 +1,12 @@
 .container {
+width: 400px;
 }
 
 .wrapper {
+margin: 10px;
 }
 
 .number {
+    display: flex;
+    justify-content: end;
 }
