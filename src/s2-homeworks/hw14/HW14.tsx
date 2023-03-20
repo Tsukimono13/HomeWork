@@ -31,11 +31,10 @@ const HW14 = () => {
     const [techs, setTechs] = useState<string[]>([])
 
     const sendQuery = (value: string) => {
-        setLoading(true)
+        setLoading(false)
         getTechs(value)
             .then((res) => {
-                // делает студент
-
+                (res && setTechs(res.data.techs))// делает студент
                 // сохранить пришедшие данные
 
                 //
@@ -44,6 +43,10 @@ const HW14 = () => {
 
     const onChangeText = (value: string) => {
         setFind(value)
+        setLoading(true)
+        setSearchParams({find: value})
+
+
         // делает студент
 
         // добавить/заменить значение в квери урла
