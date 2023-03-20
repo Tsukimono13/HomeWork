@@ -33,8 +33,7 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
 
         if (onDebouncedChange) {
                 clearTimeout(timerId)
-                const text = setTimeout(()=>{onChangeTextCallback(value)
-                }, 1500)
+                const text = setTimeout(()=>onChangeTextCallback(value), 1500)
             setTimerId(+text)
 
 

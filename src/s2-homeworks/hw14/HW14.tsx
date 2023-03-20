@@ -45,7 +45,7 @@ const HW14 = () => {
         setFind(value)
         setLoading(true)
         setSearchParams({find: value})
-
+    }
 
         // делает студент
 
@@ -53,7 +53,7 @@ const HW14 = () => {
         // setSearchParams(
 
         //
-    }
+
 
     useEffect(() => {
         const params = Object.fromEntries(searchParams)
